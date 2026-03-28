@@ -24,8 +24,8 @@ Scan any food barcode and get:
 
 | Layer | Tech | Repo |
 |-------|------|------|
-| **Backend API** | Go · chi router · pgx (raw SQL) · PostgreSQL | [`backend`](https://github.com/YOUR_ORG/backend) |
-| **Mobile App** | React Native · Expo · TypeScript | [`frontend`](https://github.com/YOUR_ORG/frontend) |
+| **Backend API** | Go · chi router · pgx (raw SQL) · PostgreSQL | [`backend`](https://github.com/TrackMyFood/backend) |
+| **Mobile App** | React Native · Expo · TypeScript | [`frontend`](https://github.com/TrackMyFood/frontend) |
 
 The backend exposes a clean REST API. The single most important endpoint is `GET /api/scan/{barcode}` — it returns everything the app needs in one call: product info, batch data, pre-calculated trust score with sub-score breakdown, journey steps, certifications, recall status, sustainability data, and anomalies. No waterfalls.
 
@@ -68,7 +68,7 @@ The backend is seeded with four products for live demo:
 
 ```bash
 # Clone and start (Docker)
-git clone https://github.com/YOUR_ORG/backend.git
+git clone https://github.com/TrackMyFood/backend.git
 cd backend
 cp .env.example .env
 make up        # starts PostgreSQL + API
@@ -80,7 +80,7 @@ API runs on `http://localhost:8090`.
 ### Frontend
 
 ```bash
-git clone https://github.com/YOUR_ORG/frontend.git
+git clone https://github.com/TrackMyFood/frontend.git
 cd frontend
 npm install
 npx expo start
