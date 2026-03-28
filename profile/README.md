@@ -24,8 +24,8 @@ Scan any food barcode and get:
 
 | Layer | Tech | Repo |
 |-------|------|------|
-| **Backend API** | Go · chi router · pgx (raw SQL) · PostgreSQL | [`backend`](https://github.com/TrackMyFood/backend) |
-| **Mobile App** | React Native · Expo · TypeScript | [`frontend`](https://github.com/TrackMyFood/frontend) |
+| **Backend API** | Go · chi router · pgx (raw SQL) · PostgreSQL | [`backend`](https://github.com/TrackMyFood/TrackMyFood-backend) |
+| **Mobile App** | React Native · Expo · TypeScript | [`frontend`](https://github.com/TrackMyFood/TrackMyFood-frontend) |
 
 The backend exposes a clean REST API. The single most important endpoint is `GET /api/scan/{barcode}` — it returns everything the app needs in one call: product info, batch data, pre-calculated trust score with sub-score breakdown, journey steps, certifications, recall status, sustainability data, and anomalies. No waterfalls.
 
